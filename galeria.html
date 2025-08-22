@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Fotos/ChatGPT-Image-18-de-ago.-de-2025_-21_12_30.ico" type="image/x-icon">
+  <title>Galeria - Breno Gutierre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Galeria de Memórias</h1>
+  </header>
+  <div class="simbolos-fundo"></div>
+  <nav>
+    <a href="My-index.html">Sobre Mim</a>
+    <a href="Momentos.html">Momentos</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Galeria</h2>
+    <p>Alguns momentos especiais que quero guardar para sempre.</p>
+    
+    <div class="galeria">
+      
+      <div class="imagem-link">
+        <a href="Momentos.html">
+          <img src="" alt="Familia">
+        </a>
+        <p class="legenda">Família ❤️</p>
+      </div>
+  
+      <div class="imagem-link">
+        <a href="Momentos.html">
+          <img src="" alt="Amigos">
+        </a>
+        <p class="legenda">Amigos ✨</p>
+      </div>
+  
+      <div class="imagem-link">
+        <a href="Momentos.html">
+          <img src="" alt="Igreja">
+        </a>
+        <p class="legenda">Igreja - Melhor Lugar ⛪</p>
+      </div>
+  
+      <div class="imagem-link">
+        <a href="Momentos.html">
+          <img src="" alt="Ipmil">
+        </a>
+        <p class="legenda">IPMIL 💪</p>
+      </div>
+  
+      <div class="imagem-link">
+        <a href="Momentos.html">
+          <img src="" alt="Meu Brilho Da Lua">
+        </a>
+        <p class="legenda">Meu Brilho da Lua 🌙</p>
+      </div>
+  
+    </div>
+  </main>
+  
+
+  <footer>
+    <p>&copy; 2025 Breno Gutierre</p>
+  </footer>
+  <script>
+  const simbolos = ["⚔️", "軍", "⚡", "忍", "★", "機", "龍", "✦", "☢️", "神"];
+  const container = document.querySelector(".simbolos-fundo");
+
+  function criarSimbolo() {
+    const span = document.createElement("span");
+    span.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+    span.style.left = Math.random() * 100 + "vw";
+    span.style.fontSize = (Math.random() * 2 + 1) + "rem";
+    span.style.animationDuration = (8 + Math.random() * 8) + "s";
+    container.appendChild(span);
+    setTimeout(() => span.remove(), 16000);
+  }
+
+  setInterval(criarSimbolo, 600);
+  </script>
+</body>
+</html>

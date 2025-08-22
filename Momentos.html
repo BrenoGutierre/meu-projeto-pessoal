@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Fotos/ChatGPT-Image-18-de-ago.-de-2025_-21_12_30.ico" type="image/x-icon">
+  <title>Histórias - Breno Gutierre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Meus momentos</h1>
+  </header>
+  <div class="simbolos-fundo"></div>
+  <nav>
+    <a href="My-index.html">Sobre Mim</a>
+    <a href="Momentos.html">Momentos</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <main>
+    <h2>Memórias</h2>
+    <p>Esse espaço é dedicado às minhas memórias, momentos e lembranças.</p>
+    
+    <!-- História 1 -->
+    <div class="historia-grid">
+      <a href="#"><img src="Família (1).jpg" alt="Família"></a>
+      <a href="#"><img src="Família (2).jpg" alt="Família"></a>
+      <a href="#"><img src="Família (3).jpg" alt="Família"></a>
+      <a href="#"><img src="Família (4).jpg" alt="Família"></a>
+    </div>
+    <p>Família: Podem não ser de sangue, mas são minha família, várias memórias inesquecíveis que temos juntos.</p>
+  
+    <!-- História 2 -->
+    <div class="historia-grid">
+      <a href="#"><img src="Amigos.jpg" alt="Amigos"></a>
+      <a href="#"><img src="Amigos (2).JPG" alt="Amigos"></a>
+      <a href="#"><img src="Amigos (3).jpg" alt="Amigos"></a>
+      <a href="#"><img src="Amigos (4).jpg" alt="Amigos"></a>
+    </div>
+    <p>Amigos: risadas, aventuras e cumplicidade. Essas amizades que resistem ao tempo são minha força e alegria diária.</p>
+  
+    <!-- História 3 -->
+    <div class="historia-grid">
+      <a href="#"><img src="Igreja (1).jpg" alt="Igreja"></a>
+      <a href="#"><img src="Igreja (2).jpg" alt="Igreja"></a>
+      <a href="#"><img src="Igreja (3).jpg" alt="Igreja"></a>
+      <a href="#"><img src="Igreja (4).jpg" alt="Igreja"></a>
+    </div>
+    <p>Igreja: Melhor lugar que tem, fiz muitas amizades, tive muitos aprendizados e crescimento pessoal, aprendi principalmente sobre Deus.</p>
+  
+    <!-- História 4 -->
+    <div class="historia-grid">
+      <a href="#"><img src="Ipmil (1).jpg" alt="IPMIL"></a>
+      <a href="#"><img src="Ipmil (2).JPG" alt="IPMIL"></a>
+      <a href="#"><img src="Ipmil (3).jpg" alt="IPMIL"></a>
+      <a href="#"><img src="Ipmil (4).jpg" alt="IPMIL"></a>
+    </div>
+    <p>IPMIL: Um curso inesquecível, muitas memórias, amizades e aprendizados. Conheci pessoas que levarei para a vida.</p>
+  
+    <!-- História 5 -->
+    <div class="historia-grid">
+      <a href="#"><img src="Meu Brilho Da Lua (2).jpg" alt="Meu Brilho Da Lua"></a>
+      <a href="#"><img src="Meu Brilho Da Lua (3).jpg" alt="Meu Brilho Da Lua"></a>
+      <a href="#"><img src="Meu brilho Da Lua (4).jpg" alt="Meu Brilho Da Lua"></a>
+      <a href="#"><img src="Meu Brilho Da Lua.jpg" alt="Meu Brilho Da Lua"></a>
+    </div>
+    <p>Meu Brilho da Lua: A única pessoa que posso realmente ser quem sou, razão da minha felicidade, meu brilho no fim do túnel, minha princesinha pirata e futura oficial da marinha.</p>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Breno Gutierre</p>
+  </footer>
+  <script>
+  const simbolos = ["⚔️", "軍", "⚡", "忍", "★", "機", "龍", "✦", "☢️", "神"];
+  const container = document.querySelector(".simbolos-fundo");
+
+  function criarSimbolo() {
+    const span = document.createElement("span");
+    span.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+    span.style.left = Math.random() * 100 + "vw";
+    span.style.fontSize = (Math.random() * 2 + 1) + "rem";
+    span.style.animationDuration = (8 + Math.random() * 8) + "s";
+    container.appendChild(span);
+    setTimeout(() => span.remove(), 16000);
+  }
+
+  setInterval(criarSimbolo, 600);
+  </script>
+
+</body>
+</html>

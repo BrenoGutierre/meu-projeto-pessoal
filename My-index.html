@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Fotos/ChatGPT-Image-18-de-ago.-de-2025_-21_12_30.ico" type="image/x-icon">
+  <title>Sobre Mim - Breno Gutierre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Breno Gutierre</h1>
+    <p>Meu cantinho digital: histórias, memórias e sonhos</p>
+  </header>
+  <div class="simbolos-fundo"></div>
+  <nav>
+    <a href="My-index.html">Sobre Mim</a>
+    <a href="Momentos.html">Momentos</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="playlist.html">Playlist</a>
+    <a href="blog.html">Blog</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Sobre Mim</h2>
+    <div class="foto-sobre">
+        <img src="Breno.jpg" alt="Foto de Breno Gutierre">
+    </div>
+    <p>
+      Sou conhecido por diversos nomes: Gutierre, Latrel, Cirilo, Negão e muitos outros. Mas aqui eu vou falar um pouco de mim.
+    </p>
+    <p>
+        Aqui voce vai conhecer diversas coisas sobre mim, só ir na barra no começo do site e voce verá o que quer ver. 
+    </p>
+    <p>
+  Quer saber mais sobre o IPMIL?
+</p>
+
+<a href="https://www.ipmil.com.br" target="_blank" class="botao">
+  Versão Cyberpunk 🔥
+</a>
+
+<a href="https://www.ipmil.com.br" target="_blank" class="botao-militar">
+  Versão Militar 🟢
+</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Breno Gutierre</p>
+  </footer>
+  <script>
+  const simbolos = ["⚔️", "軍", "⚡", "忍", "★", "機", "龍", "✦", "☢️", "神"];
+  const container = document.querySelector(".simbolos-fundo");
+
+  function criarSimbolo() {
+    const span = document.createElement("span");
+    span.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+    span.style.left = Math.random() * 100 + "vw";
+    span.style.fontSize = (Math.random() * 2 + 1) + "rem";
+    span.style.animationDuration = (8 + Math.random() * 8) + "s";
+    container.appendChild(span);
+    setTimeout(() => span.remove(), 16000);
+  }
+
+  setInterval(criarSimbolo, 600);
+  </script>
+</body>
+</html>
+
